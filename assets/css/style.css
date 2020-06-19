@@ -1,0 +1,212 @@
+/*USE THIS FOR HEADER & FOOTER. CREATE ANOTHER STYLE FILE FOR BODY ELEMENTS */
+/* Grouping all selectors at the top */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(236, 236, 236);
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+
+.container-fluid {
+padding: 0;  
+/*CSS smooth scroll*/
+/* overflow-y: scroll;
+scroll-behavior: smooth;
+scroll-snap-type: y mandatory; */
+
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for class and id selectors starts here */
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.col {
+  flex-basis: auto;
+}
+h2 {
+  font-weight: 600;
+  font-family: "Fjalla One", sans-serif;
+}
+
+h2.page-title {
+  margin-bottom: 60px;
+  padding: 30px 40px;
+  text-transform: uppercase;
+  text-align: left!important;
+}
+
+h5 {
+  padding-bottom: 1rem;
+}
+
+.masthead {
+  min-height: 5rem;
+}
+
+.masthead .navbar {
+  min-height: 5rem;
+  background-color: rgb(243, 192, 29);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: top 0.3s; /* Transition effect when sliding up or down */
+  top:0;
+  position: fixed;
+  display: block;
+}
+
+.navbar .navbar-brand {
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+  color: rgb(38, 66, 46);
+}
+
+.navbar .nav-item {
+  display: block;
+  width: auto;
+  font-weight: 800;
+  font-size: 16px;
+  order: 1;
+}
+
+#hero-page > .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-split {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.hero-split > div {
+  padding: 0;
+  margin: 0;
+}
+
+.hero-content {
+  position: relative;
+  padding: 5rem 3rem 0rem;
+}
+
+.hero-content .about-image {
+  border-radius: 50%;
+  height: 150px;
+  width: auto;
+}
+
+.highlight {
+  color: rgb(38, 66, 46);
+  font-weight: 600;
+}
+
+/* Main background image on "About" page */
+.hero-image {
+  position: relative;
+  min-height: 800px;
+  width: 100%;
+  background: url(../images/leaf-coffee-2.jpg);
+  background-position: 45% 0px;
+  background-size: cover;
+}
+
+/* .down-arrow .fas {
+  color: red;
+  position: absolute;
+  z-index: 1000;
+  bottom: 150px;
+  left: 625px;
+} */
+
+.center {
+  text-align: center;
+}
+
+.divider {
+  max-width: 60px;
+  border-width: 0.2rem;
+  margin: 2rem auto 3rem;
+}
+
+.contact-links a {
+  margin: 5px;
+}
+
+.contact-links .fab {
+  font-size: 2rem !important;
+  align-items: center;
+  color: rgb(38, 66, 46);
+}
+
+.yellow {
+  background-color: rgb(243, 192, 29);
+}
+
+/* Styling for the main section of all pages except the "about" page */
+.non-hero {
+  padding-top: 5rem;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* align-items: center; */
+  /* text-align: center; */
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+   padding-bottom: 5rem; 
+  /* scroll-snap-align: center; */
+
+}
+
+.portfolio-item {
+  padding: 1rem 0rem;
+  box-shadow: (0,0,0,.5);
+}
+
+.portfolio-item img {
+/* box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2); */
+}
+
+
+#contact-form {
+  padding-top: 2rem;
+}
+
+.footer {
+  padding: 2rem;
+  height: 80px;
+  background-color: rgb(72, 93, 60);
+  color: rgb(234, 234, 234);
+  z-index: 5;
+  margin-top: auto;
+}
