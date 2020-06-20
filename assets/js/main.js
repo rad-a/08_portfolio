@@ -1,64 +1,35 @@
-//JQurey smooth scroll
+//Hide and show navbar while scrolling up and down
+
 let windowSize = window.outerWidth;
-let navbar = document.querySelector('.navbar');
+let navbar = document.querySelector(".navbar");
 
 let previousScrollPos = window.scrollY;
-window.onscroll = function() {
+window.onscroll = function () {
+  let currentScrollPos = window.scrollY;
 
-let currentScrollPos = window.scrollY;
+  if (previousScrollPos > currentScrollPos) {
+    navbar.style.top = "0";
+  } else {
+    navbar.style.top = "-78px";
+  }
 
-    
-if (previousScrollPos > currentScrollPos) {
-    navbar.style.top = '0';
- } else {
-     navbar.style.top = '-78px';
- }
+  previousScrollPos = currentScrollPos;
+};
 
- previousScrollPos = currentScrollPos;
+//Navbar smooth scroll
 
+$(".navbar a").on("click", function (event) {
+  if (this.hash !== "") {
+    event.preventDefault();
 
-//  if (windowSize < 768) {
-     
-//     if (previousScrollPos > currentScrollPos) {
-//         navbar.style.top = '0';
-//     } else {
-//         navbar.style.top = '-100px';
-//     }
-    
-//      }
-//      previousScrollPos = currentScrollPos;
+    const hash = this.hash;
 
-}
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top,
+      },
+      800
+    );
+  }
+});
 
-
-
-
-
-
-// function toggleNavbar() {
-//     if ($(window).innerWidth() < 768) {
-//         $('.navbar').hide();
-//     } else {
-//         $('.navbar').show();
-//     }
-// }
-
-// $(document).ready(function() {
-//     toggleNavbar();
-
-//     $(window).resize(function() {
-//         toggleNavbar();
-//     });
-// });
-
-$('.navbar a').on('click', function(event) {
-    if(this.hash !== '') {
-        event.preventDefault();
-
-        const hash = this.hash;
-
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 800);
-
-}});
