@@ -97,9 +97,8 @@ h5 {
   background-color: rgb(243, 192, 29);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: top 0.3s; /* Transition effect when sliding up or down */
-  top: 0;
-  position: fixed;
-  display: block;
+  display: flex;
+
 }
 
 .navbar .navbar-brand {
@@ -223,7 +222,7 @@ h5 {
   /* align-items: center; */
   /* text-align: center; */
   justify-content: center;
-height: 100vh;
+height: 100%;
   width: 100%;
   padding-bottom: 5rem;
   /* scroll-snap-align: center; */

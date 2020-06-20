@@ -31,5 +31,13 @@ $(".navbar a").on("click", function (event) {
       800
     );
   }
+
+
 });
+
+//Collapse mobile navbar when a link is clicked 
+
+$(".navbar a").on('click', function() {
+  $("#navbarNav").collapse('hide');
+})
 
