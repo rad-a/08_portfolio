@@ -1,6 +1,8 @@
+
 //Hide and show navbar while scrolling up and down
 
-let windowSize = window.outerWidth;
+function scrollBehavior () {
+
 let navbar = document.querySelector(".navbar");
 
 let previousScrollPos = window.scrollY;
@@ -15,6 +17,7 @@ window.onscroll = function () {
 
   previousScrollPos = currentScrollPos;
 };
+
 
 //Navbar smooth scroll
 
@@ -35,9 +38,13 @@ $(".navbar a").on("click", function (event) {
 
 });
 
+
 //Collapse mobile navbar when a link is clicked 
 
 $(".navbar a").on('click', function() {
   $("#navbarNav").collapse('hide');
 })
 
+}
+
+scrollBehavior();
