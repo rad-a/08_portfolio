@@ -41,7 +41,6 @@ a:active, a:hover {
   text-decoration: none;
   border-bottom: 2px solid rgb(243, 192, 29);
   color:  rgb(38, 66, 46);
-
 }
 
 
@@ -76,6 +75,10 @@ h2.page-title {
 
 h5 {
   padding-bottom: 1rem;
+}
+
+.yellow {
+  background-color: rgb(243, 192, 29);
 }
 
 .divider {
@@ -166,43 +169,10 @@ h5 {
   margin: 2rem auto 3rem;
 }
 
-.contact-links a {
-  margin: 5px;
-}
-
-.contact-links .icon {
-  font-size: 1.5rem !important;
-  align-items: center;
-  color: rgb(38, 66, 46);
-}
-
-
-.contact .icon {
-  color: rgb(243, 192, 29);
-  padding: 15px;
-  background-color: rgb(72, 93, 60);
-  border-radius: 50%;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  margin: .5rem;
-  line-height: 20px;
-}
-
-.contact-text {
-  padding: .5rem;
-  position: relative!important;
-  text-decoration: none;
-  color:  rgb(72, 93, 60);
-}
-
-.yellow {
-  background-color: rgb(243, 192, 29);
-}
-
 /* Styling for the main section of all pages except the "about" page */
 .non-hero {
   padding-top: 5rem;
 }
-
 
 .page-section {
   display: flex;
@@ -245,8 +215,41 @@ height: 100%;
   justify-content: space-evenly;
 }
 
-#contact-form {
-  padding-top: 2rem;
+.contact-links a {
+  margin: 5px;
+}
+
+.contact-links .icon {
+  font-size: 1.5rem !important;
+  align-items: center;
+  color: rgb(38, 66, 46);
+}
+
+
+.contact .icon {
+  color: rgb(243, 192, 29);
+  padding: 15px;
+  background-color: rgb(72, 93, 60);
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin: .5rem;
+  line-height: 20px;
+
+}
+
+.contact .icon:hover {
+  background-color: rgb(38, 66, 46);
+}
+
+a.icon-link:hover {
+  border: 0;
+}
+
+.contact-text {
+  padding: .5rem;
+  position: relative!important;
+  text-decoration: none;
+  color:  rgb(72, 93, 60);
 }
 
 .footer {
