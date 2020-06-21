@@ -37,12 +37,12 @@ a:visited {
   text-decoration: none;
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
   text-decoration: none;
   border-bottom: 2px solid rgb(243, 192, 29);
-  color:  rgb(38, 66, 46);
+  color: rgb(38, 66, 46);
 }
-
 
 main {
   flex: 1;
@@ -97,7 +97,6 @@ h5 {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: top 0.3s; /* Transition effect when sliding up or down */
   display: flex;
-
 }
 
 .navbar .navbar-brand {
@@ -179,35 +178,35 @@ h5 {
   flex-direction: column;
   flex: 1;
   justify-content: center;
-height: 100%;
+  height: 100%;
   width: 100%;
   padding-bottom: 5rem;
 }
 
 .page-section.about {
-  padding-bottom: 0!important;
+  padding-bottom: 0 !important;
 }
 
 .portfolio-item {
   padding: 1.5rem;
   box-shadow: (0, 0, 0, 0.5);
-  background-color:  rgb(254, 255, 254);
-  opacity: .95;
+  background-color: rgb(254, 255, 254);
+  opacity: 0.95;
   height: 350px;
   margin-bottom: 2rem;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  transition: transform ease .3s; 
+  transition: transform ease 0.3s;
 }
 
-.portfolio-item:hover  {
+.portfolio-item:hover {
   transform: scale(1.1);
 }
 
 .portfolio-item img {
-  border-radius: .2rem ;
+  border-radius: 0.2rem;
 }
 
 .project-links {
@@ -225,16 +224,14 @@ height: 100%;
   color: rgb(38, 66, 46);
 }
 
-
 .contact .icon {
   color: rgb(243, 192, 29);
   padding: 15px;
   background-color: rgb(72, 93, 60);
   border-radius: 50%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  margin: .5rem;
+  margin: 0.5rem;
   line-height: 20px;
-
 }
 
 .contact .icon:hover {
@@ -246,10 +243,10 @@ a.icon-link:hover {
 }
 
 .contact-text {
-  padding: .5rem;
-  position: relative!important;
+  padding: 0.5rem;
+  position: relative !important;
   text-decoration: none;
-  color:  rgb(72, 93, 60);
+  color: rgb(72, 93, 60);
 }
 
 .footer {
