@@ -1,8 +1,8 @@
 # Updated  Portfolio
 
-The objective of this assignment is to improve my original [portfolio](https://github.com/rad-a/portfolio) by incorporating some of the new skills I have gained, such as JavaScript, JQuery, Bootstrap, and a more in-depth knowledge of CSS. 
+The objective of this assignment is to improve my original [portfolio](https://github.com/rad-a/first_portfolio) by incorporating some of the new skills I have gained, such as JavaScript, JQuery, Bootstrap, and a more in-depth knowledge of CSS. 
 
-My updated portfolio can be found [here](https://rad-a.github.io/08_portfolio/).
+My updated portfolio can be found [here](https://rad-a.github.io/portfolio/).
 
 ## Requirements
 - Updated portfolio featuring project 1 and two exemplary homework assignments.
